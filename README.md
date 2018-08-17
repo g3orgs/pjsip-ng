@@ -37,6 +37,10 @@ for testing you can start the command like this.
 ```
 python /opt/sip2mqtt/sip2mqtt.py -t1830 -a192.168.0.5 -uusername -pSECRET -dsipgate.de -nSUB_DID -sSECRET -vvv
 ```
+please add an ```#``` before 
+```
+CMD /bin/sh -c "python /opt/sip2mqtt/sip2mqtt.py --mqtt_topic $MQTT_TOPIC --mqtt_domain $MQTT_DOMAIN --mqtt_port $MQTT_PORT --mqtt_username $MQTT_USERNAME --mqtt_password $MQTT_PASSWORD --sip_domain $SIP_DOMAIN --sip_username $SIP_USERNAME --sip_password $SIP_PASSWORD"
+```
 
 it based on https://github.com/respoke/pjsip-docker   and https://github.com/MartyTremblay/sip2mqtt
 
